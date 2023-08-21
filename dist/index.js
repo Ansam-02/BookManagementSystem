@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
     res.send('Server UP!');
 });
 app.use('/book', bookRouter);
-// app.use((req, res) => {
-//     res.status(404).send('YOU requested sth I don`t have :( ')
-// });
+app.use((req, res) => {
+    res.status(404).send('YOU requested sth I don`t have :( ');
+});
 app.listen(PORT, () => {
     console.log(`App is running and Listening on port ${PORT} `);
 });
