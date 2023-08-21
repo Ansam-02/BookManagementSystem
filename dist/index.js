@@ -6,6 +6,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Server UP!');
 });
+app.get('/health', (req, res) => {
+    res.status(200);
+});
 app.use('/book', bookRouter);
 app.use((req, res) => {
     res.status(404).send('YOU requested sth I don`t have :( ');
