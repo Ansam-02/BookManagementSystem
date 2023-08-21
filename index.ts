@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.send('Server UP!')
 });
 app.get('/health',(req,res) => {
-    res.status(200);
+    res.send('ok');
 })
 
 app.use('/book', bookRouter);
