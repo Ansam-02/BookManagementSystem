@@ -9,7 +9,7 @@ sudo apt install nodejs curl -y
 sudo /home/ubuntu
 
 cd /home/ubuntu
-git clone https://github.com/Shadi-Almohtaseb/Books-API.git app
+git clone https://github.com/Ansam-02/-BookManagement-on-AWS.git
 cd app && npm install
 npm run build
 
