@@ -8,7 +8,7 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install nodejs curl -y
 sudo /home/ubuntu
 
-cd /home/ubuntu
+cd /home/ansam
 git clone https://github.com/Ansam-02/-BookManagement-on-AWS.git
 cd app && npm install
 npm run build
