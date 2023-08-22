@@ -6,6 +6,7 @@ sudo apt upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 sudo apt install nodejs curl -y
+sudo /home/ubuntu
 
 cd /home/ubuntu
 git clone https://github.com/Shadi-Almohtaseb/Books-API.git app
