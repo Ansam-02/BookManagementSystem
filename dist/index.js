@@ -1,13 +1,13 @@
 import express from 'express';
 import bookRouter from './routers/Book.js';
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Server UP!');
 });
 app.get('/health', (req, res) => {
-    res.status(200);
+    res.send('ok');
 });
 app.use('/book', bookRouter);
 app.use((req, res) => {
